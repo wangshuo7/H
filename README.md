@@ -1,6 +1,6 @@
 ## 项目名称
 
-互游云平台 Anchor（主播端）
+王硕个人组件
 
 ## 安装依赖
 
@@ -28,6 +28,7 @@ npm run build
 
 ## src文件目录
 
+```
 src/
 |-api/
 |————(...).ts               (各目录接口文件)
@@ -45,32 +46,47 @@ src/
 |————i18n.ts
 |-views/                    (用户界面) 
 |————Login
+```
+
+
 
 ## views文件目录
+```
 views/
 |-Login/                    (总模块目录)
 |————index.vue              (页面入口文件)
 |————component/
 |————————(...).vue          (公共组件)
+```
+
+
 
 ## 代码风格
 
 ### 单文件组件命名 (大驼峰)
 
+```
 components/
 |- MyComponent.vue
+```
+
+
 
 ### 基础组件名称(全部以H为开头)
+```
 components/
 |-HModel.vue
 |-HBreadcrumbs.vue
+```
 
 ### v-bind v-on v-slot 应尽量使用语法糖
 
+```
 <input
 :value="newTodoText"
 :placeholder="newTodoInstructions"
 />
+
 <input
 @input="onInput"
 @focus="onFocus"
@@ -79,6 +95,9 @@ components/
 <template #header>
   <h1>Here might be a page title</h1>
 </template>
+
 <template #footer>
   <p>Here's some contact info</p>
 </template>
+```
+
